@@ -16,11 +16,12 @@
 
 
         <div class="header-main">
-            <img class="logo" src="../static/img_home/logo.png" alt="Bosch logo">
+            <img class="logo" src="static/img_home/logo.png" alt="Bosch logo">
 
 
             <div class="user-icon">
-                <img src="../static/img_home/icone.png" alt="User icon">
+                <img src="{{ url_for('static', filename='img_home/icone.png') }}" alt="User">
+                <!--<img src="../static/img_home/icone.png" alt="User icon"-->
             </div>
         </div>
     </header>
