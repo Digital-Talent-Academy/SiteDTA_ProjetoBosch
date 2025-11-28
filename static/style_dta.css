@@ -13,7 +13,7 @@ body {
         .header-top {
             width: 100%;
             height: 36px;
-            background: url("./img_home/header.png") no-repeat center; 
+            background: url("./img_home/header.png") no-repeat center;
             background-size: cover;
         }
 
@@ -34,24 +34,7 @@ body {
         }
 
 
-        .user-icon img {
-            width: 35px;
-            height: 35px;
-            cursor: pointer;
-            filter: grayscale(100%);
-            transition: 0.2s;
-        }
-
-
-        .user-icon img:hover {
-            filter: grayscale(0);
-        }
-
-
-
-
-
-
+      
 
 
 .conteudo {
@@ -78,62 +61,33 @@ p {
 
 
 
-.grid {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px 20px;
-    justify-items: center;
-}
-
-
 .grid-alunas {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 30px 15px;
+    grid-template-columns: repeat(5, 1fr); /* 5 colunas */
+    gap: 30px 20px;
     justify-items: center;
     margin-top: 40px;
 }
 
-
 .aluna-card {
-    width: 200px;
+    width: 200px;   /* card maior */
     background: #fff;
     border-radius: 0px;
-    padding: 8px;              
+    padding: 12px;
     border: 1px solid #e2e2e2;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.08);
     text-align: left;
     font-family: Arial, sans-serif;
 }
 
-
 .aluna-img {
     width: 100%;
-    height: 165px;
+    height: 200px;  /* imagem maior */
     background: #e6e6e6;
     border: 1px solid #d5d5d5;
     border-radius: 4px;
 }
 
-
-.aluna-nome {
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #222;
-}
-
-
-.grid-alunas {
-    display: grid;
-    gap: 30px 20px;
-    justify-items: center;
-    margin-top: 40px;
-
-
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-}
 
 
 
