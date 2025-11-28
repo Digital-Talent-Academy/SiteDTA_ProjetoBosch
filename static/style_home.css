@@ -1,0 +1,159 @@
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+ 
+.header {
+    width: 100%;
+}
+ 
+.header-top {
+            width: 100%;
+            height: 36px;
+            background: url("./img_home/header.png") no-repeat center;
+            background-size: cover;
+        }
+ 
+.header-main {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    
+}
+ 
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+ 
+.logo {
+    width: 100px;
+    height: 65px;
+}
+ 
+.brand-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #d60000;
+    letter-spacing: 0.5px;
+}
+ 
+.user-icon img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: 0.2s;
+}
+ 
+.user-icon img:hover {
+    filter: grayscale(0%);
+}
+
+
+
+       
+
+
+        .titulo-dta {
+            margin-top: 40px;
+            padding: 0 40px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+
+        .dta-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 48px;
+            margin: 50px 0;
+            padding: 0 40px;
+        }
+
+
+        .dta-img {
+            width: 40%;
+            object-fit: cover;
+        }
+
+
+        .texto-dta {
+            width: 60%;
+        }
+
+
+        .texto-dta h2 {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+
+        .texto-dta p {
+            line-height: 1.6;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+
+        .categorias-titulo {
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            padding: 0 40px;
+        }
+
+
+
+        .cat-card {
+            width: 180px;
+            height: 180px;
+            background: #e6e6e6;
+            border-radius: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 20 px;
+            font-weight: bold;
+        }
+
+
+
+
+        .categoria-card {
+    width: 170px;
+    background: #fff;
+    border-radius: 0px;
+    font-family: Arial, sans-serif;
+}
+
+
+.categoria-img {
+    width: 100%;
+    height: 165px;
+    background: #e6e6e6;
+}
+
+
+.categoria {
+    font-size: 14px;
+    font-weight: bold;
+    color: #222;
+}
+
+
+.grid-home {
+    display: grid;
+    gap: 30px 20px;
+    justify-items: center;
+    margin-top: 40px;
+
+
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+        
