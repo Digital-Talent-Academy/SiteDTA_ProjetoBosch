@@ -117,10 +117,10 @@ body {
 /* NOME DO APRESENTADOR */
 .nome {
     font-size: 16px;/* tamanho da fonte */
-    margin-top: 10px;/* espaçamento acima do texto */
+    margin-top: 10px;/* espaçamento superior */
 }
 
-/* CARD MAIOR */
+/* CARD MAIOR PARA SEGUNDO BLOCO */
 .categoria-card2 {
     width: 310px;/* largura maior */
     padding: 8px;/* espaçamento interno */
