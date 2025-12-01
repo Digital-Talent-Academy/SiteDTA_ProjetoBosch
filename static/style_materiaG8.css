@@ -134,9 +134,8 @@ body {
  
 /* Container */
 .comentarios-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-left: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
  
 .comentarios-container h2 {
@@ -147,10 +146,12 @@ body {
  
 /* GRID */
 .comentarios-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
 }
+
  
 /* Card */
 .comentario-card {
@@ -159,9 +160,6 @@ body {
 }
 
 /*espaçamento*/
-.comentario-espaco{
-    
-}
 
 /* Header */
 .comentario-header {
@@ -190,4 +188,5 @@ body {
     line-height: 1.4;
     color: #000;
 }
+
 

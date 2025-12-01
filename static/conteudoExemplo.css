@@ -1,35 +1,44 @@
-/* == 1. CONFIGURAÇÕES BASE == */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-}
+/* BODY: remove margens e define a fonte do site */
 body {
-    font-family: Arial, sans-serif;
+
+    margin: 0;/* remove margens padrões do navegador */
+    padding: 0;/* remove preenchimento padrão */
+    font-family: Arial, sans-serif;/* define a fonte */
+
 }
 
-/* == 2. CONTAINER PRINCIPAL (FLEX) == */
+/* HEADER: ocupa 100% da largura */
 .header {
-    width: 100%;
+
+    width: 100%;/* garante que o header ocupe toda a largura */
+
 }
+
+/* PARTE SUPERIOR DO HEADER (barrinha com imagem) */
 .header-top {
-    width: 100%;
-    height: 36px;
-    background: url("header.png") no-repeat center;
-    background-size: cover;
+    width: 100%; /* imagem ocupa toda a largura */
+    height: 36px; /* altura fixa */
+    background: url("./img_home/header.png") no-repeat center; /* define a imagem e centraliza */
+    background-size: cover; /* ajusta a imagem para cobrir toda a área */
 }
+
+
+/* Parte principal do header com a logo */
 .header-main {
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 22px;
-    background: white;
+    height: 70px; /* Altura fixa */
+    display: flex; /* Organiza elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaça itens nas extremidades */
+    padding: 0 22px; /* Espaçamento interno lateral */
+    background: #ffffff; /* Fundo branco */
 }
-.brand .logo {
-    height: 70px;
-    width: auto;
+
+/* Estilo da logo */
+.logo {
+    width: 100px; /* Largura fixa */
+    height: 65px; /* Altura fixa */
 }
+
 .main-container {
     display: flex; /* Define o layout Flexbox */
     min-height: 100vh; /* Ocupa a altura total da tela */
@@ -55,7 +64,7 @@ body {
 /* ------------------------ */
 .content {
     flex-grow: 1; /* Permite que o conteúdo ocupe o espaço restante */
-    padding: 20px 40px; /* Padding interno para o conteúdo */
+    padding: 10px 40px; /* Padding interno para o conteúdo */
 }
 
 /* ======================== */

@@ -1,0 +1,206 @@
+/* BODY: remove margens e define a fonte do site */
+body {
+
+    margin: 0;/* remove margens padrões do navegador */
+    padding: 0;/* remove preenchimento padrão */
+    font-family: Arial, sans-serif;/* define a fonte */
+
+}
+
+/* HEADER: ocupa 100% da largura */
+.header {
+
+    width: 100%;/* garante que o header ocupe toda a largura */
+
+}
+
+/* PARTE SUPERIOR DO HEADER (barrinha com imagem) */
+.header-top {
+    width: 100%; /* imagem ocupa toda a largura */
+    height: 36px; /* altura fixa */
+    background: url("./img_home/header.png") no-repeat center; /* define a imagem e centraliza */
+    background-size: cover; /* ajusta a imagem para cobrir toda a área */
+}
+
+
+/* Parte principal do header com a logo */
+.header-main {
+    height: 70px; /* Altura fixa */
+    display: flex; /* Organiza elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaça itens nas extremidades */
+    padding: 0 22px; /* Espaçamento interno lateral */
+    background: #ffffff; /* Fundo branco */
+}
+
+/* Estilo da logo */
+.logo {
+    width: 100px; /* Largura fixa */
+    height: 65px; /* Altura fixa */
+}
+
+.titulo {
+    margin-top: 10px;
+    padding: 0 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.texto {
+    margin-top: 10px;
+    padding: 0 40px;
+    font-size: 30px;
+   
+}
+
+/* TEXTO PRINCIPAL DOS PARÁGRAFOS DO CONTEÚDO */
+.texto p {
+    line-height: 1.6; /* espaçamento entre linhas */
+    font-size: 16px; /* tamanho da fonte */
+    margin-bottom: 20px; /* espaço inferior */
+}
+
+/* Estilos gerais do corpo da página */
+body {
+  font-size: 14px;            /* Tamanho base da fonte */
+  line-height: 1.5;           /* Altura da linha mais confortável para leitura */
+  margin: 0;                  /* Remove margens padrão do navegador */
+  padding: 0;                 /* Remove padding padrão */
+  background: #fff;           /* Fundo branco */
+}
+
+
+/* Estilo para o título principal */
+h1 {
+  font-size: 30px;            /* Título maior */
+  margin-bottom: .5em;        /* Espaço abaixo do título */
+}
+
+/* Estilo dos parágrafos */
+p {
+  font-family: sans-serif; 
+  font-size: .8px;                   /* Tamanho do texto */
+  margin: 0 0 1 0;                  /* Espaço inferior entre parágrafos */
+}
+
+/* Container central que limita o conteúdo */
+.container {
+                  
+  margin: 0 auto;             /* Centralização horizontal */
+  padding: 2px 0; 
+  margin-left: 40px;
+  margin-right: 40px;         
+}
+
+/* Variáveis globais usadas no CSS */
+:root {
+  --border-color: rgba(0,0,0,.3); /* Cor da linha da timeline */
+}
+
+/* Cada bloco da timeline */
+.timeline-item {
+  padding: 2em 2em 2em;       /* Espaçamento interno */
+  position: relative;         /* Necessário para pos. absoluta dos pseudo-elementos */
+  border-left: 2px solid var(--border-color); /* Linha à esquerda */
+}
+
+/* Parágrafos dentro dos itens da timeline */
+.timeline-item p {
+  font-size: 1rem;            /* Parágrafos maiores dentro da timeline */
+}
+
+/* Cria o pontinho que marca cada etapa */
+.timeline-item::after {
+  width: 10px;                /* Largura da bolinha */
+  height: 10px;               /* Altura da bolinha */
+  display: block;             /* Exibe como bloco */
+  top: 6em;                   /* Posição alinhada ao título */
+  position: absolute;         /* Posicionamento manual */
+  left: -7px;                 /* Localiza a bolinha sobre a linha vertical */
+  border-radius: 10px;        /* Arredonda para virar um círculo */
+  content: '';                /* Elemento puramente decorativo */
+  border: 2px solid var(--border-color); /* Borda do círculo */
+  background: white;          /* Interior branco */
+}
+
+/* Último item da timeline com efeito de desvanecer */
+.timeline-item:last-child {
+  border-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.3) 60%,       /* Parte sólida até 60% */
+    rgba(0,0,0,0) 100%        /* Some até ficar transparente */
+  ) 1 100%;                   /* Distribuição da imagem de borda */
+  border-left-width: 2px;     /* Mantém a espessura da borda */
+  border-left-style: solid;   /* Mantém estilo sólido */
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 480px) {
+  
+  /* Garante espaço extra à esquerda no mobile */
+  .timeline-item {
+    padding-left: 3.5em;
+  }
+
+  /* Ajusta a posição da bolinha para o mobile */
+  .timeline-item::after {
+    left: -9px;               /* Reposiciona mais à esquerda */
+    top: 1.05em;              /* Pequeno acerto vertical */
+  }
+}
+
+/* Container */
+.comentarios-container {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+ 
+.comentarios-container h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+ 
+/* GRID */
+.comentarios-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+ 
+/* Card */
+.comentario-card {
+    background: #d1d1d1;
+    padding: 20px;
+}
+
+/* Header */
+.comentario-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+ 
+.comentario-avatar {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    filter: grayscale(30%);
+}
+ 
+.comentario-nome {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+ 
+/* Texto */
+.comentario-texto {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #000;
+}
