@@ -1,52 +1,54 @@
-    body {
+/* Remove margens e padding padrão e define a fonte principal */
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
- 
+
+/* Container geral do header */
 .header {
     width: 100%;
 }
- 
+
+/* Faixa superior com imagem */
 .header-top {
     width: 100%;
     height: 36px;
     background: url("./img_home/header.png") no-repeat center;
-    background-size: cover;
+    background-size: cover; /* Preenche toda a área */
 }
- 
+
+/* Parte principal do header */
 .header-main {
     height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 22px;
-    
+    display: flex; /* Coloca logo e outros itens lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaço entre os elementos */
+    padding: 0 22px; /* Espaço interno nas laterais */
 }
- 
+
+/* Agrupa logo + nome da marca */
 .brand {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 8px; /* Espaçamento entre logo e texto */
 }
- 
+
+/* Imagem da logo */
 .logo {
     width: 100px;
     height: 65px;
 }
- 
+
+/* Texto “Bosch”, “DTA”, etc. */
 .brand-name {
     font-size: 22px;
     font-weight: 700;
-    color: #d60000;
+    color: #d60000; /* Vermelho da Bosch */
     letter-spacing: 0.5px;
 }
 
-
-
-       
-
-
+/* Título principal "Digital Talent Academy - Joinville 2025" */
 .titulo-dta {
     margin-top: 40px;
     padding: 0 40px;
@@ -54,127 +56,121 @@
     font-weight: bold;
 }
 
-
-    .dta-container {
+/* Container que segura imagem + texto lado a lado */
+.dta-container {
     display: flex;
-            align-items: flex-start;
-            gap: 48px;
-            margin: 50px 0;
-            padding: 0 40px;
-        }
+    align-items: flex-start;
+    gap: 48px; /* Espaço entre imagem e texto */
+    margin: 50px 0;
+    padding: 0 40px;
+}
 
+/* Imagem grande ao lado do texto */
+.dta-img {
+    width: 40%; /* Ocupa 40% do container */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
 
-        .dta-img {
-            width: 40%;
-            object-fit: cover;
-        }
+/* Texto ao lado da imagem */
+.texto-dta {
+    width: 60%; /* Ocupa o restante do espaço */
+}
 
+/* Título dentro da seção */
+.texto-dta h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
 
-        .texto-dta {
-            width: 60%;
-        }
+/* Parágrafos da seção */
+.texto-dta p {
+    line-height: 1.6; /* Espaço entre linhas */
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 
+/* Segundo bloco grande de texto do site */
+.texto-dta2 {
+    width: 100%;
+}
 
-        .texto-dta h2 {
-            font-size: 28px;
-            margin-bottom: 12px;
-        }
+/* Título "Sobre o site" */
+.texto-dta2 h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
 
+/* Subtítulo "> Saiba mais sobre" */
+.texto-dta2 h3 {
+    font-size: 20px;
+    margin: 40px;
+}
 
-        .texto-dta p {
-            line-height: 1.6;
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
+/* Parágrafos da segunda seção */
+.texto-dta2 p {
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 40px;
+}
 
-         .texto-dta2 {
-            width: 100%;
-        }
+/* Título “Sobre o site” formatado */
+.sobre-titulo {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0 40px;
+}
 
+/* Título de “Categorias” */
+.categorias-titulo {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0 40px;
+}
 
-        .texto-dta2 h2 {
-            font-size: 28px;
-            margin-bottom: 12px;
-        }
+/* Card cinza simples (não utilizado nos principais) */
+.cat-card {
+    width: 180px;
+    height: 180px;
+    background: #e6e6e6;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20 px; /* ATENÇÃO: aqui tem erro → deveria ser "20px" sem espaço */
+    font-weight: bold;
+}
 
-        .texto-dta2 h3 {
-            font-size: 20px;
-            margin: 40px;
-        }
-
-
-        .texto-dta2 p {
-            line-height: 1.6;
-            font-size: 16px;
-            margin: 40px;
-        }
-
-
-        
-        .sobre-titulo {
-            margin-top: 20px;
-            font-size: 28px;
-            font-weight: bold;
-            padding: 0 40px;
-        }
-
-
-        .categorias-titulo {
-            margin-top: 20px;
-            font-size: 28px;
-            font-weight: bold;
-            padding: 0 40px;
-        }
-
-
-
-        .cat-card {
-            width: 180px;
-            height: 180px;
-            background: #e6e6e6;
-            border-radius: 0px;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            padding-bottom: 20 px;
-            font-weight: bold;
-        }
-
-
-
-
-
-
-        .categoria-card {
+/* Card completo de categoria (Conteúdos, Jornal, Perfis) */
+.categoria-card {
     width: 300px;
     background: #fff;
     border-radius: 0px;
     font-family: Arial, sans-serif;
 }
 
-
+/* Imagem cinza do card */
 .categoria-img {
     width: 100%;
     height: 165px;
     background: #e6e6e6;
 }
 
-
+/* Nome da categoria */
 .categoria {
     font-size: 14px;
     font-weight: bold;
     color: #222;
 }
 
-
+/* GRID RESPONSIVA das categorias */
 .grid-home {
     display: grid;
-    gap: 30px 20px;
-    justify-items: center;
+    gap: 30px 20px; /* Espaço entre as colunas e linhas */
+    justify-items: center; /* Centraliza cada card */
     margin-top: 40px;
 
-
+    /* Ajusta o número de colunas automaticamente */
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
-
-        

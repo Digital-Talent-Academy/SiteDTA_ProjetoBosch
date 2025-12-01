@@ -1,0 +1,149 @@
+/* == 1. CONFIGURAÇÕES BASE == */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* == 2. CONTAINER PRINCIPAL (FLEX) == */
+.header {
+    width: 100%;
+}
+.header-top {
+    width: 100%;
+    height: 36px;
+    background: url("header.png") no-repeat center;
+    background-size: cover;
+}
+.header-main {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    background: white;
+}
+.brand .logo {
+    height: 70px;
+    width: auto;
+}
+.main-container {
+    display: flex; /* Define o layout Flexbox */
+    min-height: 100vh; /* Ocupa a altura total da tela */
+}
+.sidebar {
+    width: 250px; /* Largura fixa para o menu lateral */
+    min-width: 200px; /* Garante que não encolha */
+    background-color: #f8f8f8; /* Fundo claro para o menu, se desejar */
+    padding: 20px 0;
+    border-right: 1px solid #ddd; /* Linha de separação */
+}
+.menu-item-placeholder {
+    /* Estilo para simular os itens do menu lateral */
+    width: 100%;
+    height: 100px; 
+    background-color: #eee;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+/* ------------------------ */
+/* Conteúdo Central (MAIN) */
+/* ------------------------ */
+.content {
+    flex-grow: 1; /* Permite que o conteúdo ocupe o espaço restante */
+    padding: 20px 40px; /* Padding interno para o conteúdo */
+}
+
+/* ======================== */
+/* == 3. CABEÇALHO & TÍTULOS == */
+/* ======================== */
+.logo {
+   
+    align-items: center; /* Centraliza verticalmente o texto e a imagem */
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #cc0000; /* Cor vermelha para simular a marca Bosch */
+    margin-bottom: 10px;
+}
+.logo img {
+    height: 35px; /* Define o tamanho da imagem do logo */
+    width: auto;
+}
+.page-title {
+    /* Título principal grande, como na imagem */
+    font-size: 2.5em; 
+    font-weight: 647;
+    margin-bottom: 40px;
+    color: #000000;
+    /* Dica de Fonte: Uma sem-serifa como Open Sans ou Roboto ficaria boa */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-title {
+    font-family: Arial, sans-serif;
+    font-size: 1.6em; 
+    margin-top: 4%;
+    margin-bottom: 40px;
+}
+/* == 4. LAYOUT PRINCIPAL (2 COLUNAS) == */
+.top-section {
+    display: inline-flex;
+    /* Define duas colunas: a primeira (bloco) maior (2 partes), a segunda (texto) menor (1 parte) */
+    gap: 50px; /* Espaço entre o bloco e o texto */
+}
+/* Adicione esta regra para garantir que o contêiner de texto não tenha margens indesejadas */
+.text-content {
+    margin: 0; /* Remove margens extras se o Grid não as anular automaticamente */
+}
+
+.text-content p {
+    /* Mantivemos a margem inferior para separar os parágrafos, o que está correto */
+    margin-bottom: 40px; 
+    line-height: 1.6;
+    font-size: 0.9em;
+    
+}
+/* Estilo para o Bloco Principal (Placeholder) */
+.image-placeholder {
+    background-color: #ccc; 
+    width: 100%; 
+    height: 390px; /* Mantém a altura do bloco */
+}
+.image-placeholder img {
+    width: 500px;
+    height: 10%;
+    object-fit: cover; 
+    display: block; 
+}
+/* == 5. SEÇÃO DE ATIVIDADES (CARDS) == */
+.activities-section {
+    /* ESTA LINHA É CRUCIAL PARA COLOCAR OS CARDS LADO A LADO */
+    display: flex; 
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+/* Estilo para os Cartões Quadrados (Placeholder) */
+.card-placeholder {
+    width: 00px; 
+    height: 300px; /* A altura é igual à largura para ser um quadrado */
+    background-color: #eee; /* Cor cinza claro */
+    flex: 1 1 300px; 
+    border: 1px solid #ddd;
+    
+}
+/* ======================== */
+@media (max-width: 900px) {
+    /* Esconde o menu lateral */
+    .sidebar {
+        display: none; 
+    }
+
+    /* Muda o layout superior para uma coluna só */
+    .top-section {
+        grid-template-columns: 1fr;
+    }
+}

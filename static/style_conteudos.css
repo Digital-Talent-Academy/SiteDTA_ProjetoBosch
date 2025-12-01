@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;   
+}
+
+.pagina {
+    align-items: center;
+    margin-left: 30px;
+    padding-left: 30px;
+     padding-right: 30px;
+}
+
+.pagina h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #0a0a0a;
+
+}
+
+.pagina h3 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #000000;
+
+}
+
+.layout {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    column-gap: 200px;
+    max-width: 2500px; 
+    align-items: center;
+}
+
+.card {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px; 
+    align-items: center;
+}
+
+.card img {
+    max-height: 80%; 
+    max-width: 100%;
+    object-fit: contain;
+    margin: auto;
+}
+
+.card p {
+    margin: 0;
+    font-size: 25px;
+    color: #555;
+    text-transform: uppercase;
+}
+
+
+.h3 {
+     margin-bottom: 20px;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-top {
+    width: 100%;
+    height: 50px;
+    background: url("../static/img_home/header.png") no-repeat center;
+    background-size: cover;
+}
+
+.header-main {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    background: #ffffff;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo {
+    margin-left: 50px;
+    width: 150px;
+    height: 90px;
+}
+
+.brand-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #d60000;
+    letter-spacing: 0.5px;
+}
+
+.user-icon img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: 0.2s;
+}
+
+.user-icon img:hover {
+    filter: grayscale(0%);
+}
+
+.layout2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px; 
+    max-width: 2500px; 
+    align-items: center;
+}
+
+.card2 {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px; 
+    align-items: center;
+}
+
+.card2 img {
+    max-height: 80%; 
+    max-width: 100%;
+    object-fit: contain;
+    margin: auto;
+}
