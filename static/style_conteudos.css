@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;   
@@ -32,6 +33,7 @@ body {
     column-gap: 200px;
     max-width: 2500px; 
     align-items: center;
+    margin-right: 50px;
 }
 
 .card {
@@ -144,3 +146,6 @@ body {
     object-fit: contain;
     margin: auto;
 }
+
+
+
