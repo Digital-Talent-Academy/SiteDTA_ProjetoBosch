@@ -157,6 +157,8 @@ body {
 .comentario-card {
     background: #d1d1d1;
     padding: 20px;
+    width: 600px;
+    height: 150px;
 }
 
 /*espaçamento*/
@@ -189,4 +191,11 @@ body {
     color: #000;
 }
 
-
+@media (max-width: 900px) {
+.comentario-card {
+    background: #d1d1d1;
+    padding: 20px;
+    width: 200px;
+    height: 300px;
+}
+}

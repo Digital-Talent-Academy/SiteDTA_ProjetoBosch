@@ -167,7 +167,6 @@ p {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    width: 100%;
 }
 
  
@@ -175,6 +174,8 @@ p {
 .comentario-card {
     background: #d1d1d1;
     padding: 20px;
+    width: 600px;
+    height: 150px;
 }
 
 /* Header */
@@ -203,4 +204,13 @@ p {
     font-size: 12px;
     line-height: 1.4;
     color: #000;
+}
+
+@media (max-width: 900px) {
+.comentario-card {
+    background: #d1d1d1;
+    padding: 20px;
+    width: 200px;
+    height: 300px;
+}
 }
